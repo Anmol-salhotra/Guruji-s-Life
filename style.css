@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, orange, yellow);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: rgba(255, 165, 0, 0.8);
+    padding: 20px;
+    color:blue;
+}
+
+/* Sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: yellow;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: red;
+}
+
+/* Images */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Floating 'Jai Guruji' Text */
+.floating-text {
+    position: fixed;
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    animation: moveRandom 5s infinite linear;
+}
+
+/* Random Position Animation */
+@keyframes moveRandom {
+    0% {
+        top: 10%;
+        left: 10%;
+    }
+    25% {
+        top: 30%;
+        left: 70%;
+    }
+    50% {
+        top: 60%;
+        left: 40%;
+    }
+    75% {
+        top: 80%;
+        left: 20%;
+    }
+    100% {
+        top: 100%;
+        left: 100%;
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Slideshow */
+.slideshow img {
+    display: 10;
+    width: 75%;
+    margin: auto;
+    border: 1px solidred;
+    border-radius: 5px;
+}
